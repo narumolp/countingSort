@@ -42,11 +42,11 @@ prefixSums = [2, 2, 3, 4, 6, 8]
   }
 ```
 4) Finally we can make output (sorted) array: by looking up value in prefixSums array for associated key. Each element in prefixSums array indicates the correct index for each distinct input element representing in keys array. 
-e.g looking at our input array, 
-first we see number 4, find number 4 in ‘keys’ and we find 6 in ‘prefixSums’, so we put 4 under index 6.
-The next number is 0, find number 0 in ‘keys’ and we find 2 in ‘prefixSums’, so we put 0 under index 2. 
-The next number is 4, find number 4 in ‘keys’ and we find 6 in ‘prefixSums’, so we put 4 under index 5 (index 6 was already taken)
-the next number is 2, find number 2 in ‘keys’ and we find 3 in ‘prefixSums’, so we put 2 under index 3.
+- e.g looking at our input array, 
+- First we see number 4, find number 4 in ‘keys’ and we find 6 in ‘prefixSums’, so we put 4 under index 6.
+- The next number is 0, find number 0 in ‘keys’ and we find 2 in ‘prefixSums’, so we put 0 under index 2. 
+- The next number is 4, find number 4 in ‘keys’ and we find 6 in ‘prefixSums’, so we put 4 under index 5 (index 6 was already taken)
+- The next number is 2, find number 2 in ‘keys’ and we find 3 in ‘prefixSums’, so we put 2 under index 3. Continue on until finish with all elements in input_array
 ```
 index:  [1, 2, 3, 4, 5, 6, 7, 8]
 sorted: [0, 0, 2, 3, 4, 4 ,5, 5]
